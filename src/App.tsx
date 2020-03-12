@@ -9,7 +9,7 @@ import DefaultLayout from './components/DefaultLayout';
 interface IProps { }
 
 const App: React.FC<IProps> = (props) => {
-    const [appTitle, setAppTitle] = useState(`Evgeni Kiradzhiyski portfolio`);
+    const [appTitle, setAppTitle] = useState(`Portfolio (Evgeni Kiradzhiyski)`);
     
     useEffect(() => {
         document.title = appTitle;
