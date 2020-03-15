@@ -25,7 +25,7 @@ const DefaultLayout: React.FC<IProps> = (props) => {
             <Header style={{color: 'white', backgroundColor: '#663A82'}}>
                 <Row>
                     <Col span={24}>
-                        <div style={{float: 'right', }}>
+                        <div style={{float: 'right'}}>
                             <a href={`https://github.com/eKirad`} style={{color: `white`}}>
                                 <GithubFilled style={{ fontSize: '25px', marginRight: '10px'}} />
                             </a>
