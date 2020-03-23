@@ -89,7 +89,7 @@ const Resume: React.FC<IProps> = (props) => {
                             </Col>
                             <Col span={14}>
                             <List.Item.Meta
-                                title={<a href="https://ant.design">{item.name}</a>}
+                                title={item.name}
                                 description={item.degree}
                             />
                             </Col>
@@ -116,13 +116,13 @@ const Resume: React.FC<IProps> = (props) => {
                             </Col>
                             <Col span={14}>
                             <List.Item.Meta
-                                title={<a href="https://ant.design">{item.position}</a>}
+                                title={item.position}
                                 description={item.location}
                             />
                             </Col>
                             <Col span={6}>
                             <List.Item.Meta
-                                title={<a href="https://ant.design">{item.company}</a>}
+                                title={item.company}
                                 description={item.time}
                             />
                             </Col>
@@ -146,12 +146,12 @@ const Resume: React.FC<IProps> = (props) => {
                             </Col>
                             <Col span={14}>
                             <List.Item.Meta
-                                title={<a href="https://ant.design">{item.language}</a>}
+                                title={item.language}
                             />
                             </Col>
                             <Col span={6}>
                             <List.Item.Meta
-                                title={<a href="https://ant.design">{item.knowledgeLevel}</a>}
+                                title={item.knowledgeLevel}
                             />
                             </Col>
                         </List.Item>
