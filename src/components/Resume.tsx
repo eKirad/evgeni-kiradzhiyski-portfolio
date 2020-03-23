@@ -3,6 +3,7 @@ import * as React from "react";
 
 // Antd imports
 import { List, Tag, Divider, Row, Col, Avatar } from 'antd';
+import { FilePdfOutlined } from '@ant-design/icons'
 
 interface IProps { } 
 
@@ -72,7 +73,14 @@ const Resume: React.FC<IProps> = (props) => {
       ];
 
     return(
-        <div>
+        <div style={{padding: "10px", margin: "5px"}}>
+            <Row>
+                <Col span={24}>
+                    <div style={{float: 'right'}}>
+                        <FilePdfOutlined style={{ fontSize: '20px', marginRight: '5px'}}/>
+                    </div>
+                </Col>
+            </Row>
             <Row>
                 <Divider orientation="left">Education</Divider>
             </Row>
