@@ -5,6 +5,7 @@ import { Link, Route, Switch } from "react-router-dom";
 // Component imports
 import Resume from './Resume';
 import Overview from "./Overview";
+import Contact from './Contact';
 
 // Antd imports
 import { Menu, Row, Col } from 'antd';
@@ -62,7 +63,10 @@ const DefaultLayout: React.FC<IProps> = (props) => {
                                 <span>Resume</span>
                                 <Link to="/resume"></Link>
                             </Menu.Item>
-                            <Menu.Item key="3">Contact</Menu.Item>
+                            <Menu.Item key="3">
+                                <span>Contact</span>
+                                <Link to="/contact"></Link>
+                            </Menu.Item>
                         </SubMenu>
 
                     </Menu>
@@ -74,6 +78,9 @@ const DefaultLayout: React.FC<IProps> = (props) => {
                         </Route>
                         <Route exact={true} path='/resume'>
                             <Resume/>
+                        </Route>
+                        <Route exact={true} path='/contact'>
+                            <Contact/>
                         </Route>
                     </Switch>
                 </Content>
